@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hilal Furniture</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <img src="furniture-logo-template-design_23-2148633672.avif" alt="Logo" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">Tentang Kami</a></li>
+                    <li><a href="#services">Layanan</a></li>
+                    <li><a href="#gallery">Galeri</a></li>
+                    <li><a href="#contact">Kontak</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="section">
+        <div class="content">
+            <h1>Selamat Datang di Hilal Furniture</h1>
+            <p>Temukan solusi inovatif bersama kami.</p>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="content">
+            <h2>Tentang Kami</h2>
+            <p>Kami adalah tim profesional yang berfokus pada perabotan rumah.</p>
+        </div>
+    </section>
+
+    <section id="services" class="section">
+        <div class="content">
+            <h2>Layanan</h2>
+            <p>Kami menyediakan berbagai layanan seperti sofa, meja, lemari, dan lain-lain.</p>
+        </div>
+    </section>
+
+    <section id="gallery" class="section">
+        <div class="content">
+            <h2>Galeri</h2>
+            <p>Lihat hasil karya terbaik kami:</p>
+            <div class="gallery">
+                <img src="download (1).jpg" alt="Gambar 1">
+                <img src="lall.webp" alt="Gambar 2">
+                <img src="image.jpg" alt="Gambar 3">
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="content">
+            <h2>Kontak Kami</h2>
+            <form>
+                <input type="text" placeholder="Nama" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Pesan" required></textarea>
+                <button type="submit">Kirim</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; Hati-Hati penipuan. Semua hak dilindungi.</p>
+    </footer>
+
+    <!-- JavaScript untuk smooth scrolling -->
+    <script>
+        document.querySelectorAll('nav ul li a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+
+                window.scrollTo({
+                    top: targetElement.offsetTop - 70,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
